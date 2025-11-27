@@ -1,21 +1,21 @@
-# name: GitHub Actions Test Development
+name: GitHub Actions Test Development
 
-# on:
-#   push:
-#     branches:
-#       - develop
+on:
+  push:
+    branches:
+      - develop
 
-# permissions:
-#   contents: read
+permissions:
+  contents: read
 
-# jobs:
-#   test:
-#     uses: ./.github/workflows/_reusable-test.yaml
-#     with:
-#       sample-value: 'development'
+jobs:
+  test:
+    uses: ./.github/workflows/_reusable-test.yaml
+    with:
+      sample-value: 'development'
 
-#   deploy:
-#     needs: test
-#     uses: ./.github/workflows/_reusable-deploy.yaml
-#     with:
-#       environment: development
+  deploy:
+    needs: test
+    uses: ./.github/workflows/_reusable-deploy.yaml
+    with:
+      environment: development
