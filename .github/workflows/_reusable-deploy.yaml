@@ -21,4 +21,4 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
       - run: |
-        echo "Environment: ${{ inputs.environment }}"
+         echo "Environment: ${{ inputs.environment }}"

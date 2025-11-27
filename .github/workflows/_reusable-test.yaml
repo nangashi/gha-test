@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - run: |
-        echo "Sample value: ${{ inputs.sample_value }}"
+          echo "Sample value: ${{ inputs.sample_value }}"
