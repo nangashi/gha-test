@@ -15,5 +15,4 @@ jobs:
   test:
     runs-on: ubuntu-slim
     steps:
-      - run: echo "Sample value"
-      # - run: echo "Sample value: ${{ inputs.sample_value }}"
+      - run: echo "Sample value: ${{ github.event.inputs.sample_value }}"
