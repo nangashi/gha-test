@@ -20,4 +20,5 @@ jobs:
     runs-on: ubuntu-slim
     environment: ${{ inputs.environment }}
     steps:
-      - run: echo "Environment: a"
+      - run: |
+        echo "Environment: ${{ inputs.environment }}"
