@@ -6,11 +6,11 @@ on:
       environment:
         description: 'The environment to deploy to'
         required: true
-        type: enum
-        enum:
-          - production
-          - staging
-          - development
+        type: string
+        # enum:
+        #   - production
+        #   - staging
+        #   - development
 
 permissions:
   contents: read
