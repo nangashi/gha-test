@@ -1,0 +1,18 @@
+name: Reusable Test
+
+on:
+  workflow_call:
+    inputs:
+      sample-value:
+        description: 'A sample value to test'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  
+jobs:
+  test:
+    runs-on: ubuntu-slim
+    steps:
+      - run: echo "Sample value: ${{ inputs.sample-value }}"

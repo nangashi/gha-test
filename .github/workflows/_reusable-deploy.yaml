@@ -1,0 +1,23 @@
+name: Reusable Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: 'The environment to deploy to'
+        required: true
+        type: enum
+        enum:
+          - production
+          - staging
+          - development
+
+permissions:
+  contents: read
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-slim
+    environment: ${{ inputs.environment }}
+    steps:
+      - run: echo "Environment: ${{ inputs.environment }}"
