@@ -3,7 +3,7 @@ name: GitHub Actions Test Staging
 on:
   push:
     branches:
-      - develop
+      - staging
 
 permissions:
   contents: read
