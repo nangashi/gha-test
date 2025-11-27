@@ -1,4 +1,4 @@
-name: GitHub Actions Test
+name: GitHub Actions Test Staging
 
 on:
   push:
@@ -19,4 +19,3 @@ jobs:
     uses: ./.github/workflows/_reusable-deploy.yaml
     with:
       environment: staging
-      
