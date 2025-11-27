@@ -19,3 +19,10 @@ jobs:
     uses: ./.github/workflows/_reusable-deploy.yaml
     with:
       environment: development
+
+  gate:
+    needs: [test, deploy]
+    runs-on: ubuntu-slim
+    steps:
+      - run: |
+          echo "Gate: ${{ toJSON(needs) }}"
