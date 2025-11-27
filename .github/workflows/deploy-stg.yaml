@@ -12,7 +12,7 @@ jobs:
   test:
     uses: ./.github/workflows/_reusable-test.yaml
     with:
-      sample-value: 'staging'
+      sample_value: 'staging'
 
   deploy:
     needs: test

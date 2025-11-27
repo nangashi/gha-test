@@ -3,7 +3,7 @@ name: Reusable Test
 on:
   workflow_call:
     inputs:
-      sample-value:
+      sample_value:
         description: 'A sample value to test'
         required: true
         type: string
@@ -15,4 +15,4 @@ jobs:
   test:
     runs-on: ubuntu-slim
     steps:
-      - run: echo "Sample value: ${{ inputs.sample-value }}"
+      - run: echo "Sample value: ${{ inputs.sample_value }}"
