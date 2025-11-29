@@ -20,7 +20,7 @@ jobs:
           echo "Sample value: ${{ inputs.sample_value }}"
 
       - name: Install Packages
-        uses: jdx-mise-action@v3
+        uses: jdx/mise-action@v3
         with:
           install: true
           cache: true
