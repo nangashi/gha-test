@@ -1,0 +1,17 @@
+name: Test PR
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - staging
+      - main
+
+permissions:
+  contents: read
+  
+jobs:
+  test:
+    uses: ./.github/workflows/_reusable-test.yaml
+    with:
+      sample_value: 'pr'

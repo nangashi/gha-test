@@ -19,11 +19,13 @@ jobs:
         run: |
           echo "Sample value: ${{ inputs.sample_value }}"
 
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
       - name: Install Packages
-        uses: jdx-mise-action@v3
+        uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
         with:
-          install: true
-          cache: true
+          version: 2025.11.10
 
       - name: Run Tests
         run: |
