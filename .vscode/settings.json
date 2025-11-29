@@ -3,5 +3,9 @@
         "**/__pycache__": true,
         "**/.venv": true,
         "**/.pytest_cache": true,
+        "**/.coverage": true,
+        "**/htmlcov": true,
+        "**/test-results.xml": true,
+        "**/coverage.xml": true,
     },
 }
